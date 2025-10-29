@@ -14,6 +14,7 @@ import Mice from "./Pages/Mice";
 import Keyboards from "./Pages/Keyboards";
 import Payment from "./Pages/Payment";
 import Cart from "./Pages/Cart";
+import Repairs from "./Pages/Repairs";
 
 
 
@@ -37,6 +38,7 @@ export default function App() {
             <Route path="/keyboards" element={<Keyboards/>} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/payment" element={<Payment />} />
+            <Route path="/repairs" element={<Repairs />} />
           </Routes>
         </main>
         <Footer />

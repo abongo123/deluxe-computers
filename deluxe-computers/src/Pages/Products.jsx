@@ -29,6 +29,7 @@ export default function Products() {
           <li><Link to="/toners" className="hover:underline">Toners</Link></li>
           <li><Link to="/mice" className="hover:underline">Mice</Link></li>
           <li><Link to="/keyboards" className="hover:underline">Keyboards</Link></li>
+          <li><Link to="/repairs" className="hover:underline">Repairs</Link></li>
         </ul>
       </div>
       <div className="w-3/4 grid md:grid-cols-3 gap-8">
