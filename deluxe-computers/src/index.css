@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #030108; /* dark indigo */
+  color: #c1cffb;
+  font-family: 'Inter', sans-serif;
+}
