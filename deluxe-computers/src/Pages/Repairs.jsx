@@ -64,7 +64,7 @@ export default function Repairs() {
           onChange={(e) => setSelectedRepair(e.target.value)}
           className="w-full p-3 rounded-md text-black"
         >
-          <option value="">-- Choose a Repair --</option>
+          <option value="">Choose a Repair</option>
           {repairs.map((r, i) => (
             <option key={i} value={r}>
               {r}
@@ -75,9 +75,7 @@ export default function Repairs() {
 
       <button
         onClick={handleBooking}
-        className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
-      >
-        Book Now
+        className="bg-indigo-600 text-white px-6 py-3 rounded-none hover:bg-indigo-700 transition">Book Now
       </button>
     </div>
   );
