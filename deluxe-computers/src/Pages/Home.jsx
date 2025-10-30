@@ -39,8 +39,8 @@ export default function Home() {
           className="w-full md:w-1/2 rounded-2xl shadow-2xl"
         />
         <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center -translate-y-10">
-          <h1 className="text-4xl font-bold mb-3">Deluxe Computers</h1>
-          <p className="text-lg">Your Trusted Partner in Tech Innovation 💻</p>
+          <h1 className="text-5xl font-bold mb-3">Deluxe Computers</h1>
+          <p className="text-lg">Your Trusted Partner in Tech Products💻</p>
         </div>
       </div>
 

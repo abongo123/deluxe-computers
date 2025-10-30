@@ -19,7 +19,7 @@ export default function Repairs() {
 
   return (
     <div className="p-12 flex flex-col items-center gap-6">
-      <h2 className="text-3xl font-bold text-white">Book a Repair</h2>
+      <h2 className="text-3xl font-bold text-white">Book a Repair with US</h2>
       <div className="flex flex-col w-1/2">
         <label htmlFor="firstName" className="text-sm mb-1 text-gray-300">
           Name*

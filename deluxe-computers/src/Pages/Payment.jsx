@@ -6,6 +6,7 @@ export default function Payment() {
   const cart = state?.cart || [];
 
   const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [types, setTypes] = useState(
     cart.reduce((acc, item) => ({ ...acc, [item.name]: "" }), {})
   );
@@ -85,6 +86,16 @@ export default function Payment() {
         type="tel"
         placeholder="Enter your phone number"
         value={phone}
+        onChange={(e) => setPhone(e.target.value)}
+        className="p-3 rounded-md w-full text-black"
+      />
+    </div>
+    <div>
+      <label className="block mb-1 font-semibold">Email:</label>
+      <input
+        type="email"
+        placeholder="Enter your email"
+        value={email}
         onChange={(e) => setPhone(e.target.value)}
         className="p-3 rounded-md w-full text-black"
       />

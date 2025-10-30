@@ -2,7 +2,7 @@ export default function Contact() {
   return (
    <div className="flex flex-col md:flex-row p-12 gap-10 mt-4">
   <div className="w-full md:w-1/2 bg-[#c1cffb] flex justify-center items-center rounded-2xl shadow-xl">
-    <h2 className="text-4xl font-bold text-black">Contact Us</h2>
+    <h2 className="text-4xl font-bold text-black">Get In Touch with Us</h2>
   </div>
 
   <div className="w-full md:w-1/2 p-6 rounded-2xl shadow-lg space-y-4">
