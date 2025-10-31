@@ -14,10 +14,12 @@ export default function Desktops() {
   ];
 
   return (
-    <div className="p-12 flex gap-10">
-      
-      <div className="w-1/5 p-6 border-r border-gray-400 space-y-4">
-        <h2 className="text-xl font-semibold border-b text-center">Go to</h2>
+    <div className="flex flex-col md:flex-row p-6 md:p-12 gap-8">
+      <div className="w-full md:w-1/5 p-6 space-y-4 
+        border-b md:border-b-0 md:border-r border-gray-400">
+        <h2 className="text-xl font-semibold border-b text-center pb-2">
+          Go to
+        </h2>
         <ul className="space-y-2">
           <li><Link to="/products" className="hover:underline">All Products</Link></li>
           <li><Link to="/laptops" className="hover:underline">Laptops</Link></li>
@@ -30,24 +32,34 @@ export default function Desktops() {
           <li><Link to="/repairs" className="hover:underline">Repairs</Link></li>
         </ul>
       </div>
-
-      <div className="w-4/5 grid md:grid-cols-3 gap-10">
+      <div className="w-full md:w-4/5 grid grid-cols-2 md:grid-cols-3 gap-6">
         {products.map((p, i) => (
-          <div key={i} className="bg-indigo-500 rounded-xl p-5 text-center shadow-lg hover:scale-105 transition">
-            <img src={p.img} alt={p.name} className="rounded-lg mb-4 mx-auto" />
+          <div
+            key={i}
+            className="bg-indigo-500 rounded-xl p-5 text-center shadow-lg 
+              hover:scale-105 transition"
+          >
+            <img
+              src={p.img}
+              alt={p.name}
+              className="rounded-lg mb-4 mx-auto"
+            />
             <h3 className="font-bold text-lg text-white">{p.name}</h3>
-            <p className="text-indigo-200 mb-3">Ksh {p.price.toLocaleString()}</p>
-            
+            <p className="text-indigo-200 mb-3">
+              Ksh {p.price.toLocaleString()}
+            </p>
+
             <button
               onClick={() => addToCart(p)}
-              className="bg-white text-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-100 transition"
+              className="bg-white text-indigo-600 px-4 py-2 rounded-lg 
+              hover:bg-indigo-100 transition"
             >
               Add to Cart
             </button>
           </div>
         ))}
 
-        <div className="col-span-3 text-center mt-8">
+        <div className="col-span-2 md:col-span-3 text-center mt-6">
           <Link
             to="/cart"
             className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700"

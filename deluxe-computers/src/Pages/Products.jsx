@@ -17,8 +17,8 @@ export default function Products() {
   ];
 
   return (
-    <div className="flex p-12 gap-8">
-      <div className="w-1/8 p-6 rounded-none space-y-4 text-start border-r border-gray-400">
+    <div className="flex flex-col md:flex-row p-6 md:p-12 gap-8">
+      <div className="w-full md:w-1/5 p-6 space-y-4 text-start border-b md:border-b-0 md:border-r border-gray-400">
         <h2 className="text-xl font-semibold border-b text-center">Go to</h2>
         <ul className="space-y-2">
           <li><Link to="/products" className="hover:underline">All Products</Link></li>
@@ -32,7 +32,7 @@ export default function Products() {
           <li><Link to="/repairs" className="hover:underline">Repairs</Link></li>
         </ul>
       </div>
-      <div className="w-3/4 grid md:grid-cols-3 gap-8">
+      <div className="w-full md:w-4/5 grid grid-cols-2 md:grid-cols-3 gap-6">
         {products.map((p, i) => (
           <Link key={i} 
             to={`/payment/${encodeURIComponent(p.name)}`} 
