@@ -38,7 +38,7 @@ export default function Home() {
           alt="Computer"
           className="w-full md:w-1/2 rounded-2xl shadow-2xl"
         />
-        <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center -translate-y-10">
+        <div className="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center pt-6 md:pt-0">
           <h1 className="text-5xl font-bold mb-3">Deluxe Computers</h1>
           <p className="text-lg">Your Trusted Partner in Tech Products💻</p>
         </div>
