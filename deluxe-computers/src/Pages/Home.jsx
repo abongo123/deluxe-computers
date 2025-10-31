@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <div className="p-12 space-y-20">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10">
         <img
           src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
           alt="Computer"
