@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-col md:flex-row justify-between bg-indigo-900 p-6 text-center md:text-left">
       <div>Email: support@deluxecomputers.com</div>
-      <div>Phone: +254 700 123 456</div>
+      <div>Phone: +254720722001</div>
       <div className="text-wrap">Location: Opposite Christ The King Catholic Church</div>
 
    <div className="flex justify-center space-x-6">

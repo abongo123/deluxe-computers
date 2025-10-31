@@ -5,7 +5,7 @@ export default function Home() {
   const sections = [
     {
       title: "Affordable PCs",
-      desc: "Quality desktops and laptops that match your budget—perfect for students, freelancers & small businesses.",
+      desc: "Quality desktops and laptops that match your budget, perfect for students, freelancers & small businesses.",
       img: "https://images.unsplash.com/photo-1587202372775-98907b3a5b1e",
       link: "/products"
     },
@@ -18,7 +18,7 @@ export default function Home() {
     ,
     {
       title: "Accessories & Gadgets",
-      desc: "Keyboards, mice, webcams, RAM, storage & more — everything your computer needs.",
+      desc: "Keyboards, mice, webcams, RAM, storage & more, everything your computer needs.",
       img: "https://images.unsplash.com/photo-1586952518485-11b5c7bfa0f6",
       link: "/accessories"
     },

@@ -117,7 +117,7 @@ export default function Laptops() {
             setStorageFilter("");
             setGenerationFilter("");
           }}
-          className="mt-4 w-full bg-gray-200 text-black py-2 rounded hover:bg-gray-300"
+          className="mt-4 w-full bg-red-500 text-black py-2 rounded hover:bg-gray-300"
         >
           Clear Filters
         </button>
