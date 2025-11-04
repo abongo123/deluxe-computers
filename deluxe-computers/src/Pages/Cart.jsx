@@ -11,26 +11,26 @@ export default function Cart() {
         <p>Your cart is empty.</p>
       ) : (
         cart.map((item) => (
-          <div key={item.key} className="flex items-center justify-between mb-4 bg-gray-100 p-3 rounded shadow">
+          <div key={item.key} className="flex items-center justify-between mb-4 bg-gray-100 p-3 rounded shadow text-black">
             <div>
               <p className="font-semibold">{item.name}</p>
-              <p className="text-gray-500">Ksh {item.price.toLocaleString()}</p>
-              <p className="text-gray-500">Quantity: {item.quantity}</p>
-              {item.ram && <p className="text-gray-500">RAM: {item.ram}</p>}
-              {item.storage && <p className="text-gray-500">Storage: {item.storage}</p>}
-              {item.generation && <p className="text-gray-500">Gen: {item.generation}</p>}
+              <p className="">Ksh {item.price.toLocaleString()}</p>
+              <p className="">Quantity: {item.quantity}</p>
+              {item.ram && <p className="">RAM: {item.ram}</p>}
+              {item.storage && <p className="">Storage: {item.storage}</p>}
+              {item.generation && <p className="">Gen: {item.generation}</p>}
             </div>
 
             <div className="flex items-center gap-2">
               <button
                 onClick={() => updateQuantity(item.key, -1)}
-                className="px-2 py-1 bg-gray-300 rounded hover:bg-gray-400"
+                className="px-2 py-1 bg-black rounded hover:bg-gray-700 text-white"
               >
                 -
               </button>
               <button
                 onClick={() => updateQuantity(item.key, 1)}
-                className="px-2 py-1 bg-gray-300 rounded hover:bg-gray-400"
+                className="px-2 py-1 bg-black rounded hover:bg-gray-700 text-white"
               >
                 +
               </button>
