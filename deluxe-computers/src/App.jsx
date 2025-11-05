@@ -40,7 +40,7 @@ export default function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/repairs" element={<Repairs />} />
-            <Route path="/chekout" element={<Checkout />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </main>
         <Footer />

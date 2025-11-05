@@ -4,6 +4,7 @@ import { useCart } from "../context/cartcontext";
 export default function Checkout() {
   const { cart } = useCart();
   const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const [deliveryType, setDeliveryType] = useState("pickup");
   const [address, setAddress] = useState("");
 
@@ -14,6 +15,10 @@ export default function Checkout() {
       alert("Please enter your name");
       return;
     }
+    if (!phone.trim()) {
+  alert("Please enter your phone number");
+  return;
+     }
     if (deliveryType === "delivery" && !address.trim()) {
       alert("Please enter your delivery address");
       return;
@@ -23,20 +28,26 @@ export default function Checkout() {
   };
 
   return (
-    <div className="p-8 mt-24 max-w-lg mx-auto bg-white shadow-lg rounded-lg">
+    <div className="p-8 mt-24 max-w-lg mx-auto bg-[#c1cffb] shadow-lg rounded-lg">
       <h1 className="text-2xl font-bold mb-4">Checkout</h1>
-
-      <label className="font-semibold">Your Name</label>
+      <label className="font-semibold text-black">Your Name</label>
       <input
         type="text"
-        className="w-full border p-2 rounded mb-4"
+        className="w-full border p-2 rounded-none mb-4 bg-black"
         placeholder="Enter full name"
         value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+        onChange={(e) => setName(e.target.value)}/>
 
-      <label className="font-semibold">Delivery Option</label>
-      <div className="flex gap-4 mb-4">
+        <label className="font-semibold text-black">Phone Number</label>
+      <input
+        type="tel"
+        className="w-full border p-2 rounded-none mb-4 bg-black"
+        placeholder="Input your phone number"
+        value={phone}
+        onChange={(e) => setPhone(e.target.value)}/>
+
+      <label className="font-semibold text-black">Delivery Option</label>
+      <div className="flex gap-4 mb-4 text-black">
         <label>
           <input
             type="radio"
