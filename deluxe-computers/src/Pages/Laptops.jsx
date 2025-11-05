@@ -191,8 +191,6 @@ export default function Laptops() {
             </Link>
           </div>
         </div>
-
-        {/* Products */}
         <div className="w-full md:w-4/5">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {filteredProducts.length ? (
@@ -206,21 +204,16 @@ export default function Laptops() {
 
                     <div className="flex-1">
                       <h4 className="font-semibold text-lg">{product.brand} — {product.name}</h4>
-
-                      {/* Show specs */}
                       <p className="text-sm mt-1">
                         <span className="font-medium">{variant.ram}</span> • {variant.storage} • {variant.generation}
                       </p>
 
                       <p className="font-bold text-xl mt-3">Ksh {variant.price.toLocaleString()}</p>
                     </div>
-
-                    {/* Variant select */}
                     <select
                       className="mt-3 p-2 rounded border"
                       value={selectedVariants[idx]}
-                      onChange={(e) => handleVariantChange(idx, Number(e.target.value))}
-                    >
+                      onChange={(e) => handleVariantChange(idx, Number(e.target.value))}>
                       {product.variants.map((v, vi) => (
                         <option key={vi} value={vi}>
                           {v.ram} / {v.storage} / {v.generation} — Ksh {v.price.toLocaleString()}
@@ -230,8 +223,7 @@ export default function Laptops() {
 
                     <button
                       onClick={() => addToCart({ brand: product.brand, name: product.name, img: product.img, ...variant })}
-                      className="mt-3 bg-white text-indigo-600 py-2 rounded-lg w-full hover:bg-indigo-600"
-                    >
+                      className="mt-3 bg-white text-indigo-600 py-2 rounded-lg w-full hover:underline">
                       Add to Cart
                     </button>
                   </div>

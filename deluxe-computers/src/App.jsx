@@ -15,6 +15,7 @@ import Keyboards from "./Pages/Keyboards";
 import Payment from "./Pages/Payment";
 import Cart from "./Pages/Cart";
 import Repairs from "./Pages/Repairs";
+import Checkout from "./Pages/Checkout";
 
 
 
@@ -39,6 +40,7 @@ export default function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/repairs" element={<Repairs />} />
+            <Route path="/chekout" element={<Checkout />} />
           </Routes>
         </main>
         <Footer />
