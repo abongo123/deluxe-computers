@@ -74,7 +74,7 @@ export default function Checkout() {
       {deliveryType === "delivery" && (
         <input
           type="text"
-          className="w-full border p-2 rounded mb-4"
+          className="w-full border p-2 rounded mb-4 bg-black"
           placeholder="Delivery Address"
           value={address}
           onChange={(e) => setAddress(e.target.value)}
