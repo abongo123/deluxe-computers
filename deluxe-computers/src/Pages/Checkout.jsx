@@ -24,12 +24,12 @@ export default function Checkout() {
       return;
     }
 
-    alert(`Order confirmed! Thank you ${name}.`);
+    alert(`Order Confirmed! Thank you ${name}.`);
   };
 
   return (
     <div className="p-8 mt-24 max-w-lg mx-auto bg-[#c1cffb] shadow-lg rounded-lg">
-      <h1 className="text-2xl font-bold mb-4">Checkout</h1>
+      <h1 className="text-2xl font-bold mb-4 text-black">Checkout</h1>
       <label className="font-semibold text-black">Your Name</label>
       <input
         type="text"
