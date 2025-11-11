@@ -7,3 +7,10 @@ body {
   color: white;
   font-family: 'Inter', sans-serif;
 }
+
+/* index.css - minimal helpers */
+body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+.input { width:100%; padding:0.5rem; border:1px solid #e5e7eb; border-radius:6px; }
+.btn-primary { background:#0b74ff; color:white; padding:0.5rem 0.75rem; border-radius:6px; }
+.btn-secondary { background:#f3f4f6; padding:0.4rem 0.6rem; border-radius:6px; }
+.btn-muted { background:#fff; border:1px solid #e5e7eb; padding:0.4rem 0.6rem; border-radius:6px; }
