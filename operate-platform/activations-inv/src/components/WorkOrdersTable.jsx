@@ -5,7 +5,7 @@ export default function WorkOrdersTable({ workOrders = [], onSync = () => {} }) 
   const [selected, setSelected] = useState(null);
 
   return (
-    <div className="bg-white rounded shadow p-4">
+    <div className="bg-white rounded shadow p-4 text-black">
       <table className="w-full table-auto">
         <thead>
           <tr className="text-left text-sm text-gray-600 border-b">

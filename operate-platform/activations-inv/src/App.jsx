@@ -1,11 +1,12 @@
 import React from "react";
 import WorkOrdersPage from "./pages/WorkOrdersPage";
+import WorkOrderForm from "./components/WorkOrderForm";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 p-6">
       <header className="mb-6">
-        <h1 className="text-2xl font-semibold">Work Orders — Onboarding Sync</h1>
+        <h1 className="text-2xl font-semibold text-black">Work Orders — Onboarding Sync</h1>
       </header>
 
       <main>

@@ -9,7 +9,7 @@ export default function WorkOrdersPage() {
 
   return (
     <div>
-      <div className="flex justify-between items-center mb-4">
+      <div className="flex justify-between items-center mb-4 text-black">
         <div>
           <button className="btn-primary mr-2" onClick={() => setShowForm(true)}>
             + Add Work Order
