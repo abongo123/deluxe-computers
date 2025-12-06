@@ -23,13 +23,72 @@ export default function Home() {
           </button>
         </Link>
       </div>
-
       {/* Product preview cards */}
-      <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div className="h-56 bg-white rounded-lg border border-[#F2F2F2] shadow-md"></div>
-        <div className="h-56 bg-white rounded-lg border border-[#F2F2F2] shadow-md"></div>
-        <div className="h-56 bg-white rounded-lg border border-[#F2F2F2] shadow-md"></div>
+<div className="mt-16">
+  <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+    Featured Perfumes
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    {[
+      {
+        name: "Rose Elegance",
+        price: 3500,
+        type: "Floral",
+        image: "/perfume1.jpg",
+      },
+      {
+        name: "Ocean Breeze",
+        price: 4200,
+        type: "Fresh",
+        image: "/perfume2.jpg",
+      },
+      {
+        name: "Midnight Oud",
+        price: 5800,
+        type: "Woody",
+        image: "/perfume3.jpg",
+      },
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="bg-white rounded-xl border border-[#F2F2F2] shadow-md overflow-hidden group hover:shadow-xl transition"
+      >
+        {/* Image */}
+        <div className="h-56 overflow-hidden relative">
+          <img
+            src={item.image}
+            alt={item.name}
+            className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+          />
+          <span className="absolute top-3 left-3 bg-[#828c51] text-black text-xs px-3 py-1 rounded-full">
+            {item.type}
+          </span>
+        </div>
+
+        {/* Info */}
+        <div className="p-4 text-center">
+          <h3 className="font-semibold text-lg mb-1">{item.name}</h3>
+
+          <p className="text-sm text-gray-600 mb-2">
+            Premium long-lasting fragrance
+          </p>
+
+          <p className="font-bold mb-3">
+            Kshs {item.price.toLocaleString()}
+          </p>
+
+          <Link to="/shop">
+            <button className="w-full bg-[#828c51] text-black py-2 rounded-md font-semibold hover:bg-[#6f7845] hover:text-white transition">
+              View Product
+            </button>
+          </Link>
+        </div>
       </div>
+    ))}
+  </div>
+</div>
+
 
       {/* Why Choose Us */}
       <div className="mt-20 text-center">
