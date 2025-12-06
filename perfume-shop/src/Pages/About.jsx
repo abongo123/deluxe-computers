@@ -1,7 +1,74 @@
+import aboutImg from "../assets/about.jpg";
+
 export default function About() {
   return (
-    <div className="p-6 text-white">
-      <h1 className="text-3xl font-bold">About</h1>
+    <div className="px-6 py-16 max-w-6xl mx-auto">
+
+      {/* PAGE TITLE */}
+      <div className="text-center mb-14">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          About Aura Perfumes
+        </h1>
+        <p className="text-white/80 max-w-2xl mx-auto text-sm md:text-base">
+          We are dedicated to bringing you premium fragrances that define elegance, confidence, and identity.
+        </p>
+      </div>
+
+      {/* STORY SECTION */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        {/* LEFT TEXT */}
+        <div className="space-y-5 text-sm md:text-base text-white/80">
+          <p>
+            Aura Perfumes was founded with a simple mission: to make luxury fragrances accessible, authentic, and unforgettable.
+          </p>
+
+          <p>
+            Every scent we offer is carefully selected to reflect quality, longevity, and elegance. Whether you prefer bold, fresh, floral, or woody fragrances — we have something crafted just for you.
+          </p>
+
+          <p>
+            Our commitment goes beyond selling perfumes. We aim to help you express personality, mood, and confidence through scent.
+          </p>
+        </div>
+
+        {/* ✅ RIGHT IMAGE */}
+        <div className="w-full h-80 md:h-96 rounded-xl overflow-hidden">
+          <img
+            src={aboutImg}
+            alt="Luxury Perfume Story"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      {/* VALUES SECTION */}
+      <div className="mt-20 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-10">Our Core Values</h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="bg-white/10 p-6 rounded-lg">
+            <h3 className="font-semibold mb-2">Authenticity</h3>
+            <p className="text-sm text-white/80">
+              We guarantee 100% genuine products.
+            </p>
+          </div>
+
+          <div className="bg-white/10 p-6 rounded-lg">
+            <h3 className="font-semibold mb-2">Quality</h3>
+            <p className="text-sm text-white/80">
+              Only the best long-lasting fragrances.
+            </p>
+          </div>
+
+          <div className="bg-white/10 p-6 rounded-lg">
+            <h3 className="font-semibold mb-2">Customer First</h3>
+            <p className="text-sm text-white/80">
+              Your satisfaction is our top priority.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
