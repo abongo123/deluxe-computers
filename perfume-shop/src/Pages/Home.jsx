@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import perfume1 from "../assets/perfume1.jpg";
+import perfume2 from "../assets/perfume2.jpg";
+import perfume3 from "../assets/perfume3.jpg";
 
 export default function Home() {
   return (
@@ -35,19 +38,19 @@ export default function Home() {
         name: "Rose Elegance",
         price: 3500,
         type: "Floral",
-        image: "/perfume1.jpg",
+        image: perfume1,
       },
       {
         name: "Ocean Breeze",
         price: 4200,
         type: "Fresh",
-        image: "/perfume2.jpg",
+        image: perfume2,
       },
       {
         name: "Midnight Oud",
         price: 5800,
         type: "Woody",
-        image: "/perfume3.jpg",
+        image: perfume3,
       },
     ].map((item, index) => (
       <div
