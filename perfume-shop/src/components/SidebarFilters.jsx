@@ -18,8 +18,9 @@ export default function SidebarFilters({
       )}
       <aside
         className={`
-          fixed md:static top-0 left-0 z-50
-          w-64 p-5 min-h-screen
+          fixed md:static top-16 md:top-0 left-0 z-40
+          w-64 p-5 max-h-[calc(100vh-4rem)]
+          overflow-y-auto 
           transform transition-transform duration-300
           ${show ? "translate-x-0" : "-translate-x-full"}
           md:translate-x-0

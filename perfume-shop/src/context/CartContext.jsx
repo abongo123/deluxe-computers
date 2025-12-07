@@ -26,18 +26,25 @@ export function CartProvider({ children }) {
     });
   }
 
-  // ✅ Remove Item
+  // ✅ Remove Single Item
   function removeFromCart(id) {
     setCart((prev) => prev.filter((item) => item.id !== id));
   }
 
   // ✅ Update Quantity
   function updateQuantity(id, qty) {
+    if (qty < 1) return;
+
     setCart((prev) =>
       prev.map((item) =>
         item.id === id ? { ...item, cartQty: qty } : item
       )
     );
+  }
+
+  // ✅ ✅ ✅ CLEAR CART (THIS WAS MISSING)
+  function clearCart() {
+    setCart([]);
   }
 
   // ✅ Total Price
@@ -46,9 +53,23 @@ export function CartProvider({ children }) {
     0
   );
 
+  // ✅ Total Items (for cart badge)
+  const totalItems = cart.reduce(
+    (sum, item) => sum + item.cartQty,
+    0
+  );
+
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, updateQuantity, total }}
+      value={{
+        cart,
+        addToCart,
+        removeFromCart,
+        updateQuantity,
+        clearCart,     // ✅ NOW EXPOSED
+        total,
+        totalItems,
+      }}
     >
       {children}
     </CartContext.Provider>
